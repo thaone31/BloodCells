@@ -71,17 +71,17 @@ def seed_everything(seed):
 seed_everything(seed)
 
 
-g = sns.countplot(x='labels',data=df)
-g.set_xticklabels(encoder.classes_);
+# g = sns.countplot(x='labels',data=df)
+# g.set_xticklabels(encoder.classes_);
 
 
-df_split = df[['image_id']].copy()
-# df_split = pd.concat([df_split,pd.get_dummies(df.labels).astype('int32')],axis=1)
-df_split['bbox_count'] = 1
-df_split = df_split.groupby('image_id').sum()
+# df_split = df[['image_id']].copy()
+# # df_split = pd.concat([df_split,pd.get_dummies(df.labels).astype('int32')],axis=1)
+# df_split['bbox_count'] = 1
+# df_split = df_split.groupby('image_id').sum()
 
-g = plt.figure(figsize=(15,4))
-g = sns.countplot(x='bbox_count',data=df_split)
+# g = plt.figure(figsize=(15,4))
+# g = sns.countplot(x='bbox_count',data=df_split)
 
 df_split
 
