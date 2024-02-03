@@ -35,7 +35,7 @@ null_class_coef = 0.2
 BATCH_SIZE = 32
 LR = 2e-5
 EPOCHS = 20
-ANNOT_DIR = '/kaggle/input/datasetimagebloodcells/DataImage/annotation'
+ANNOT_DIR = '/DataImage/annotation'
 device = torch.device('cuda')
 
 def get_objects(xml_file):
@@ -76,7 +76,7 @@ seed_everything(seed)
 
 
 df_split = df[['image_id']].copy()
-# df_split = pd.concat([df_split,pd.get_dummies(df.labels).astype('int32')],axis=1)
+df_split = pd.concat([df_split,pd.get_dummies(df.labels).astype('int32')],axis=1)
 df_split['bbox_count'] = 1
 df_split = df_split.groupby('image_id').sum()
 
@@ -110,7 +110,7 @@ def valid_trainsform():
         ToTensorV2(),
     ], bbox_params=A.BboxParams(format='coco',label_fields=['labels']))
 
-IMG_DIR = '/kaggle/input/datasetimagebloodcells/DataImage/image'
+IMG_DIR = '/DataImage/image'
 
 class MaskDataset(Dataset):
     def __init__(self, image_ids, dataframe, transforms=None):
