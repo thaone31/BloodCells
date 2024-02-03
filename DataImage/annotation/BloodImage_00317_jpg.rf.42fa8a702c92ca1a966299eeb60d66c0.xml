@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>BloodImage_00317_jpg.rf.42fa8a702c92ca1a966299eeb60d66c0.jpg</filename>
+	<path>BloodImage_00317_jpg.rf.42fa8a702c92ca1a966299eeb60d66c0.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>neutrophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>233</xmin>
+			<xmax>526</xmax>
+			<ymin>131</ymin>
+			<ymax>454</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,14 @@
+<annotation>
+	<folder></folder>
+	<filename>BNE_640140_jpg_jpg.rf.a24f4210ff6096f0d1c56bcded9e2f34.jpg</filename>
+	<path>BNE_640140_jpg_jpg.rf.a24f4210ff6096f0d1c56bcded9e2f34.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>PLATELET_282754_jpg_jpg.rf.b037166664bd727953acd9792a0d7115.jpg</filename>
+	<path>PLATELET_282754_jpg_jpg.rf.b037166664bd727953acd9792a0d7115.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>platelets</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>328</xmin>
+			<xmax>512</xmax>
+			<ymin>348</ymin>
+			<ymax>492</ymax>
+		</bndbox>
+	</object>
+</annotation>

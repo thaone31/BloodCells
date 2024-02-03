@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>Eosi-82-_jpg.rf.c68b4ee48475495d7108abf88f0404f8.jpg</filename>
+	<path>Eosi-82-_jpg.rf.c68b4ee48475495d7108abf88f0404f8.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>eosinophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>260</xmin>
+			<xmax>602</xmax>
+			<ymin>232</ymin>
+			<ymax>597</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>MO_340650_jpg_jpg.rf.3fcb85f62807b7482a27a5000697fdd9.jpg</filename>
+	<path>MO_340650_jpg_jpg.rf.3fcb85f62807b7482a27a5000697fdd9.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>monocyte</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>153</xmin>
+			<xmax>692</xmax>
+			<ymin>114</ymin>
+			<ymax>684</ymax>
+		</bndbox>
+	</object>
+</annotation>

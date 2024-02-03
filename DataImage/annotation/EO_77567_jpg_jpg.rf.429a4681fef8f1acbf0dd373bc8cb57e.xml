@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>EO_77567_jpg_jpg.rf.429a4681fef8f1acbf0dd373bc8cb57e.jpg</filename>
+	<path>EO_77567_jpg_jpg.rf.429a4681fef8f1acbf0dd373bc8cb57e.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>eosinophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>260</xmin>
+			<xmax>584</xmax>
+			<ymin>265</ymin>
+			<ymax>582</ymax>
+		</bndbox>
+	</object>
+</annotation>

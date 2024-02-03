@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>SNE_79214_jpg_jpg.rf.2f6b4a6047be2de579290f762323ac1d.jpg</filename>
+	<path>SNE_79214_jpg_jpg.rf.2f6b4a6047be2de579290f762323ac1d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>neutrophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>270</xmin>
+			<xmax>581</xmax>
+			<ymin>268</ymin>
+			<ymax>575</ymax>
+		</bndbox>
+	</object>
+</annotation>

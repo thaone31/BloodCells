@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>BloodImage_00094_jpg.rf.d6b98eee28e1ec2cb131b0e0198622d9.jpg</filename>
+	<path>BloodImage_00094_jpg.rf.d6b98eee28e1ec2cb131b0e0198622d9.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>eosinophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>395</xmin>
+			<xmax>714</xmax>
+			<ymin>198</ymin>
+			<ymax>581</ymax>
+		</bndbox>
+	</object>
+</annotation>

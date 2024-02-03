@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>Neutro-95-_jpg.rf.6eb3388df922f8f4e5a1ed2e46fbd3ff.jpg</filename>
+	<path>Neutro-95-_jpg.rf.6eb3388df922f8f4e5a1ed2e46fbd3ff.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>neutrophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>164</xmin>
+			<xmax>771</xmax>
+			<ymin>156</ymin>
+			<ymax>691</ymax>
+		</bndbox>
+	</object>
+</annotation>

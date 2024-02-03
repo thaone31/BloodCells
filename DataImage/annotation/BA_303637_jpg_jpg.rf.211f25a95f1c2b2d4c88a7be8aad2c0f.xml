@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>BA_303637_jpg_jpg.rf.211f25a95f1c2b2d4c88a7be8aad2c0f.jpg</filename>
+	<path>BA_303637_jpg_jpg.rf.211f25a95f1c2b2d4c88a7be8aad2c0f.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>basophil</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>235</xmin>
+			<xmax>620</xmax>
+			<ymin>249</ymin>
+			<ymax>596</ymax>
+		</bndbox>
+	</object>
+</annotation>

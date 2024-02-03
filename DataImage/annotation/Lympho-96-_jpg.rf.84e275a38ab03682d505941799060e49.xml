@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>Lympho-96-_jpg.rf.84e275a38ab03682d505941799060e49.jpg</filename>
+	<path>Lympho-96-_jpg.rf.84e275a38ab03682d505941799060e49.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>840</width>
+		<height>840</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>lymphocyte</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>289</xmin>
+			<xmax>588</xmax>
+			<ymin>279</ymin>
+			<ymax>588</ymax>
+		</bndbox>
+	</object>
+</annotation>
