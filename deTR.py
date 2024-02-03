@@ -70,7 +70,24 @@ def seed_everything(seed):
     torch.backends.cudnn.benchmark = True
 seed_everything(seed)
 
+annots = []
+for xml in os.listdir(ANNOT_DIR):
+    annots += get_objects(os.path.join(ANNOT_DIR,xml))
+df = pd.DataFrame(annots)
 
+# Adjust w, h
+for i in df.index:
+    exceed_w =  df.iloc[i].x + df.iloc[i].w - df.iloc[i].width
+    exceed_h =  df.iloc[i].y + df.iloc[i].h - df.iloc[i].height
+    if exceed_w > 0:
+        df.loc[df.index == i,'w'] -= exceed_w
+    if exceed_h > 0:
+        df.loc[df.index == i,'h'] -= exceed_h
+
+encoder = LabelEncoder()
+df.labels = encoder.fit_transform(df.labels)
+
+df.head()
 # g = sns.countplot(x='labels',data=df)
 # g.set_xticklabels(encoder.classes_);
 
@@ -88,11 +105,11 @@ df_split
 train_split = df_split[:int(len(df_split)*.9)]
 val_split = df_split[int(len(df_split)*.9):]
 
-fig, axs = plt.subplots(1,2,figsize=(13,4))
-sns.countplot(x='labels',data=df[df['image_id'].isin(train_split.index)],ax=axs[0])
-axs[0].set_title('Labels distribution in training set')
-sns.countplot(x='labels',data=df[df['image_id'].isin(val_split.index)],ax=axs[1])
-axs[1].set_title('Labels distribution in validation set')
+# fig, axs = plt.subplots(1,2,figsize=(13,4))
+# sns.countplot(x='labels',data=df[df['image_id'].isin(train_split.index)],ax=axs[0])
+# axs[0].set_title('Labels distribution in training set')
+# sns.countplot(x='labels',data=df[df['image_id'].isin(val_split.index)],ax=axs[1])
+# axs[1].set_title('Labels distribution in validation set')
 
 
 def train_transform():
