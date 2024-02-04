@@ -1,0 +1,14 @@
+def show_sample(index):
+    images, targets, image_ids = next(iter(val_data_loader))
+    images = list(img.to(device) for img in images)
+    image = images[index].permute(1,2,0).cpu().numpy()
+    original_image = image.copy()
+
+    boxes = targets[index]['boxes'].numpy()
+    boxes = [np.array(box).astype(np.int32) for box in A.augmentations.bbox_utils.denormalize_bboxes(boxes,image.shape[0],image.shape[1])]
+
+    model.eval()
+    model.to(device)
+    with torch.no_grad():
+        outputs = model(images)
+    pred_classes = outputs['pred_logits'][index].softmax(1).cpu().numpy()
