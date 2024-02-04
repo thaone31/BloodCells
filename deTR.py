@@ -162,7 +162,7 @@ class MaskDataset(Dataset):
             labels = sample['labels']
             
         _, h, w = image.shape
-        boxes = A.core.bbox_utils.denormalize_bboxes()
+        boxes = A.core.bbox_utils.denormalize_bboxes
         
         target = {}
         target['boxes'] = torch.as_tensor(boxes,dtype=torch.float32)
